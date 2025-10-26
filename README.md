@@ -1,9 +1,7 @@
-**Python Version:** 3.9+ 
-**Packages Used:** fastapi, uvicorn, websockets  
+-**Python Version:** 3.9+ 
+-**Packages Used:** fastapi, uvicorn, websockets  
 
----
-
-## Installation
+## Package Installation
 ```bash
 pip install -r requirements.txt
 ```
@@ -17,13 +15,15 @@ pip install -r requirements.txt
  ```bash
    python client_example.py
 ```
-## Tested Scenarios:
-1.Basic Real-time Messaging:Users in the same topic can chat in real time. Messages are broadcast to everyone except the sender, who receives a delivery confirmation.
-2.Username Management:Duplicate usernames in a topic get a numeric suffix (e.g., `alice#2`). The server notifies users if their username is modified.
-3.Topic Room Management:Use the `/list` command to view active topics with user counts. Topics are automatically removed when all users leave.
-4.Message Lifecycle:Messages expire and are deleted after 30 seconds. No message is stored beyond its time-to-live (TTL).
-5.Error Handling & Resilience:Invalid JSON is handled gracefully. Disconnected users are cleaned up without affecting others, keeping the server stable.
-6.Concurrent Operations:Multiple clients can join different topics simultaneously without cross-talk between rooms.
+## Tested Scenarios
+
+- **Basic Real-time Messaging:** Users in the same topic can chat in real time. Messages are broadcast to everyone except the sender, who receives a delivery confirmation.  
+- **Username Management:** Duplicate usernames in a topic get a numeric suffix (e.g., `alice#2`). The server notifies users if their username is modified.  
+- **Topic Room Management:** Use the `/list` command to view active topics with user counts. Topics are automatically removed when all users leave.  
+- **Message Lifecycle:** Messages expire and are deleted after 30 seconds. No message is stored beyond its time-to-live (TTL).  
+- **Error Handling & Resilience:** Invalid JSON is handled gracefully. Disconnected users are cleaned up without affecting others, keeping the server stable.  
+- **Concurrent Operations:** Multiple clients can join different topics simultaneously without cross-talk between rooms.
+
 
 ## Project Structure
 ```bash
