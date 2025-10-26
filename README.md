@@ -31,7 +31,7 @@ pip install -r requirement.txt
 .
 ├── main.py              # FastAPI WebSocket server
 ├── client_example.py    # Example client implementation
-├── requirements.txt     # Project dependencies
+├── requirement.txt     # Project dependencies
 └── README.md           # This file
 ```
 
