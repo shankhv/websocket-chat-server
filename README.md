@@ -4,7 +4,7 @@
 
 ## Package Installation
 ```bash
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 ## How to Run:
 
