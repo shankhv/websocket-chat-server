@@ -1,5 +1,6 @@
--**Python Version:** 3.9+ 
--**Packages Used:** fastapi, uvicorn, websockets  
+### Prerequisites
+- Python 3.9+
+- Required packages: FastAPI, Uvicorn, websockets 
 
 ## Package Installation
 ```bash
